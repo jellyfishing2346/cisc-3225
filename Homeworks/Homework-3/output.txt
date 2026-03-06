@@ -1,0 +1,67 @@
+--- Original Data ---
+Neighborhood Array:  ['N00' 'N01' 'N02' 'N03' 'N04' 'N05' 'N06' 'N07' 'N08' 'N09' 'N10' 'N11'
+ 'N12' 'N13' 'N14' 'N15' 'N16' 'N17' 'N18' 'N19' 'N20' 'N21' 'N22' 'N23'
+ 'N24' 'N25' 'N26' 'N27']
+AQI Values:  [ 84  72  87 105  70  70 106  90  65  85  65  65  79  36  40  63  54  81
+  56  46 104  70  76  46  64  77  51  82]
+
+--- Neighborhood AQI Mapping ---
+N00 : AQI = 84
+N01 : AQI = 72
+N02 : AQI = 87
+N03 : AQI = 105
+N04 : AQI = 70
+N05 : AQI = 70
+N06 : AQI = 106
+N07 : AQI = 90
+N08 : AQI = 65
+N09 : AQI = 85
+N10 : AQI = 65
+N11 : AQI = 65
+N12 : AQI = 79
+N13 : AQI = 36
+N14 : AQI = 40
+N15 : AQI = 63
+N16 : AQI = 54
+N17 : AQI = 81
+N18 : AQI = 56
+N19 : AQI = 46
+N20 : AQI = 104
+N21 : AQI = 70
+N22 : AQI = 76
+N23 : AQI = 46
+N24 : AQI = 64
+N25 : AQI = 77
+N26 : AQI = 51
+N27 : AQI = 82
+
+--- AQI Statistics ---
+Top 5 Lowest AQI Values (Ascending): [36 40 46 46 51]
+Top 5 Highest AQI Values (Descending):  [106 105 104  90  87]
+
+--- Top 5 Cleanest Neighborhoods ---
+N13 : AQI = 36
+N14 : AQI = 40
+N23 : AQI = 46
+N19 : AQI = 46
+N26 : AQI = 51
+
+--- Top 5 Most Polluted Neighborhoods ---
+N06 : AQI = 106
+N03 : AQI = 105
+N20 : AQI = 104
+N07 : AQI = 90
+N02 : AQI = 87
+
+--- Post-Intervention Data
+Updated AQI Values by Indices 2, 7, 14, 21 reduced by 15: 
+[ 84  72  72 105  70  70 106  75  65  85  65  65  79  36  25  63  54  81
+  56  46 104  55  76  46  64  77  51  82]
+Updated Mean AQI: 68.89
+
+--- Top 5 Worst Neighborhoods Post-Intervention ---
+N06 : AQI = 106
+N03 : AQI = 105
+N20 : AQI = 104
+N09 : AQI = 85
+N00 : AQI = 84
