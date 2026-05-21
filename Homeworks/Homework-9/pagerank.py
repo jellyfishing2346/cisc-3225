@@ -39,12 +39,15 @@ print(rank)
 # 4. Reset rank vector to equal values
 rank = np.ones(len(pages)) / len(pages)
 
-# 5. Update rank vector 200 times (non-damped version)
-for _ in range(200):
-    rank = M @ rank
+# 5. Damped PageRank calculation
+rank = np.ones(len(pages)) / len(pages)  # Reset to uniform distribution
+for _ in range(20):
+    rank = 0.85 * (M @ rank) + 0.15 * (np.ones(len(pages)) / len(pages))
 
-print("Final rank vector after 200 iterations:")
-print(rank)
+damped_ranks = pd.Series(rank, index=pages)
+damped_ranks = damped_ranks.sort_values(ascending=False)
+print("\nFinal ranks with damping (highest to lowest):")
+print(damped_ranks)
 
 
 # 6. Damped PageRank calculation
